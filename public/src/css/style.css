@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+header {
+    height: 50px;
+    background-color: cadetblue;
+    padding: 5px 10px;
+}
+
+.list {
+    list-style: none;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.page-title {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.weather {
+    margin-top: 2rem;
+    width: 900px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.weather-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input-city {
+    flex-basis: 50%;
+    height: 1.8rem;
+    border-radius: 8px;
+    padding: 2px 4px;
+}
+
+.btn {
+    flex-basis: 10%
+}
+
+.weather-info {
+    display: grid;
+    text-align: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "city-header temp-header ."
+        "city temp weather-icon"
+    ;
+    align-items: center;
+}
+
+.city {
+    grid-area: city;
+}
+
+.temp {
+    grid-area: temp;
+}
+
+.icon {
+    grid-area: weather-icon;
+}
+
+.history {
+    margin-top: 2rem;
+}
+
+#map {
+    width: 400px;
+    height: 300px;
+}
