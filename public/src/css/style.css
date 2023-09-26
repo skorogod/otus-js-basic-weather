@@ -37,6 +37,7 @@ a:link, a:visited {
 
 .weather {
     margin-top: 2rem;
+    margin-bottom: 100px;
     width: 900px;
     display: flex;
     flex-flow: column wrap;
@@ -83,9 +84,13 @@ a:link, a:visited {
     grid-area: weather-icon;
 }
 
-.history {
+.info {
+    display: flex;
+    justify-content: space-around;
+    
     margin-top: 2rem;
 }
+
 
 #map {
     width: 400px;

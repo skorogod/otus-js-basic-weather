@@ -4,10 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git+https://github.com/skorogod/otus-js-basic-weather.git"
   },
   "keywords": [],
@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/skorogod/otus-js-basic-weather#readme",
   "devDependencies": {
-    "jest": "^29.6.4",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "@types/jest": "^29.5.5",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "node-static": "^0.7.11"
   }
 }
