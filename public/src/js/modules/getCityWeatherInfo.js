@@ -12,8 +12,10 @@ export async function getCityWeatherInfo (ev) {
     inputEl.value = "";
 
     const weather = await getWeather(cityName);
-
-    showWeather(weather);
-    showMap(weather.coord.lat, weather.coord.lon);
-    setSearchHistory(cityName);
+    
+    if (weather) {
+        showWeather(weather);
+        showMap(weather.coord.lat, weather.coord.lon);
+        setSearchHistory(cityName);
+    }
 }

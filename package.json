@@ -21,9 +21,13 @@
     "@babel/core": "^7.23.0",
     "@babel/preset-env": "^7.22.20",
     "@types/jest": "^29.5.5",
+    "@types/yandex-maps": "^2.1.31",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "node-static": "^0.7.11"
+    "node-static": "^0.7.11",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "ymaps": "^0.2.1"
   }
 }

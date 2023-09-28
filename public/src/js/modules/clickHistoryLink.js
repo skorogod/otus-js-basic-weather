@@ -6,8 +6,10 @@ export async function clickHistoryLink(ev) {
     ev.preventDefault();
 
     const cityName = ev.target.innerHTML;
-    weather = await getWeather(cityName);
+    let weather = await getWeather(cityName);
 
-    showWeather(weather);
-    showMap(weather.coord.lat, weather.coord.lon)
+    if (weather) {
+        showWeather(weather);
+        showMap(weather.coord.lat, weather.coord.lon)
+    }
 }

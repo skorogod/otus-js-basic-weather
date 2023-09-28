@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695772431710" clover="3.2.0">
-  <project timestamp="1695772431710" name="All files">
-    <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0" elements="4" coveredelements="0" complexity="0" loc="3" ncloc="3" packages="1" files="1" classes="1"/>
-    <file name="getWeather.js" path="C:\Users\igor\Desktop\OTUS\FullStackDeveloper\WorkDir\JavaScript-Basic\otus-js-basic-weather\public\src\js\modules\getWeather.js">
-      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <line num="2" count="0" type="stmt"/>
-      <line num="4" count="0" type="stmt"/>
+<coverage generated="1695854539798" clover="3.2.0">
+  <project timestamp="1695854539798" name="All files">
+    <metrics statements="15" coveredstatements="5" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="1" elements="21" coveredelements="6" complexity="0" loc="15" ncloc="15" packages="1" files="2" classes="2"/>
+    <file name="getGeolocation.js" path="C:\Users\igor\Desktop\OTUS\FullStackDeveloper\WorkDir\JavaScript-Basic\otus-js-basic-weather\public\src\js\modules\getGeolocation.js">
+      <metrics statements="10" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
       <line num="8" count="0" type="stmt"/>
+      <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+    </file>
+    <file name="getWeather.js" path="C:\Users\igor\Desktop\OTUS\FullStackDeveloper\WorkDir\JavaScript-Basic\otus-js-basic-weather\public\src\js\modules\getWeather.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

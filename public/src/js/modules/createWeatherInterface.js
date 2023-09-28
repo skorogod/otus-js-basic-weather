@@ -6,10 +6,17 @@ import { getSearchHistory } from "./getSearchHistory.js";
 
 export async function createWeatherInterface() {
     const cityName = await getGeolocation();
-    const weather = await getWeather(cityName);
-    
-    showWeather(weather);
-    showMap(weather.coord.lat, weather.coord.lon)
+    let weather;
+
+    if (cityName) {
+        weather = await getWeather(cityName);
+        
+        if (weather) {
+            showWeather(weather);
+            showMap(weather.coord.lat, weather.coord.lon)
+        }
+    }
+
     getSearchHistory()
     
 }
