@@ -18,8 +18,9 @@ describe("getWeather", () => {
         expect(getWeather).toBeInstanceOf(Function);
     });
     
-    test('getWeather for Moscow returns json', async () => {
+    test('getWeather for Moscow returns Object', async () => {
         const weather = await getWeather('Moscow');
+        expect(weather).toBeInstanceOf(Object);
         expect(weather.name).toBe('Moscow');
         expect(weather.main.temp).toBe(20.34);
         expect(weather.weather[0].icon).toBe('2nd2x');
@@ -27,7 +28,6 @@ describe("getWeather", () => {
 
     test('getWeather for Tillimilitryamdia returns null', async () => {
         fetch.mockImplementationOnce(() => Promise.reject("API is down"));
-
         const weather = await getWeather('illimilitryamdia');
         expect(weather).toBeNull();
     })

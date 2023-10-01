@@ -1,3 +1,5 @@
+import { addHistoryListItem } from "./addHistoryListItem.js";
+
 export function setSearchHistory(cityName) {
     let cities = JSON.parse(localStorage.getItem("cities"));
 
@@ -6,12 +8,13 @@ export function setSearchHistory(cityName) {
     }
 
     if (!cities.includes(cityName)) {
+
       if (cities.length >= 10) {
-        cities = [cityName, ...cities.slice(0, 8)];
+        cities = [cityName, ...cities.slice(0, 9)];
       } else {
         cities.unshift(cityName);
       }
-
+      
       localStorage.setItem("cities", JSON.stringify(cities));
     }
   }

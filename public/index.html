@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=60fbb6fe-db6b-4081-8e82-67ea7d82e121&lang=en_US" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Document</title>
 </head>
@@ -24,12 +29,13 @@
             <div class="temp"></div>
             <div class="icon"></div>
         </div>
-        <form class="weather-form" action="">
+        <form id="weather-form" class="weather-form" action="">
             <input id="input-city" class="input input-city" type="text" placeholder="Enter your city" required autofocus>
-            <button class="btn">Send</button>
+            <button id="submitBtn" class="btn">Send</button>
         </form>
         <div class="info">
-            <div id="map" class="map"></div>
+            <div id="weathermap" class="weathermap">
+            </div>
             <div class="history">
                 <h2 class="history-title">Search History</h2>
                 <ul class="list history-list"></ul>

@@ -1,9 +1,13 @@
 export function showMap(x, y) {
-    let map = document.getElementById("map");
-    map.innerHTML = '';
+  const mapEl = document.getElementById("weathermap");
+  mapEl.innerHTML = '<div id="map" class="map"></div>';
 
-    map = new ymaps.Map("map", {
-      center: [x, y],
-      zoom: 10,
-    });
-  }
+  let map = new L.Map('map');
+
+  map.setView([x, y], 13);
+
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+}

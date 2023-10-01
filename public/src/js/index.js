@@ -1,8 +1,14 @@
 import { createWeatherInterface } from "./modules/createWeatherInterface.js";
 import { clickHistoryLink } from "./modules/clickHistoryLink.js";
-import { getCityWeatherInfo } from "./modules/getCityWeatherInfo.js"
+import { submitCityInputForm } from "./modules/submitInputCityForm.js"
+import { getGeolocation } from "./modules/getGeolocation.js";
 
-ymaps.ready(() => (async function () {
+
+const res = await getGeolocation();
+
+
+
+(async function () {
   const formEl = document.querySelector(".weather-form");
   
   await createWeatherInterface();
@@ -13,5 +19,5 @@ ymaps.ready(() => (async function () {
     el.addEventListener("click", clickHistoryLink);
   })
 
-  formEl.addEventListener("submit", getCityWeatherInfo);
-})());
+  formEl.addEventListener("submit", submitCityInputForm);
+})();

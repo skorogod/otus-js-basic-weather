@@ -4,7 +4,7 @@ export function getSearchHistory() {
     let cities = JSON.parse(localStorage.getItem("cities"));
 
     if (cities) {
-      cities.forEach((cityName) => {
+      cities.reverse().forEach((cityName) => {
         addHistoryListItem(cityName);
       });
     }

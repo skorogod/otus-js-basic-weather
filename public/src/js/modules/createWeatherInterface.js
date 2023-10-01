@@ -5,11 +5,15 @@ import { getGeolocation } from "./getGeolocation.js"
 import { getSearchHistory } from "./getSearchHistory.js";
 
 export async function createWeatherInterface() {
-    const cityName = await getGeolocation();
+    const geolocation = await getGeolocation();
     let weather;
 
-    if (cityName) {
+    console.log(geolocation)
+
+    if (geolocation) {
+        let cityName = geolocation.city;
         weather = await getWeather(cityName);
+        console.log(weather)
         
         if (weather) {
             showWeather(weather);
@@ -18,5 +22,4 @@ export async function createWeatherInterface() {
     }
 
     getSearchHistory()
-    
 }

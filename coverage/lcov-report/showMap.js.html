@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for getWeather.js</title>
+    <title>Code coverage report for showMap.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> getWeather.js</h1>
+        <h1><a href="index.html">All files</a> showMap.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -75,33 +75,30 @@
 <a name='L10'></a><a href='#L10'>10</a>
 <a name='L11'></a><a href='#L11'>11</a>
 <a name='L12'></a><a href='#L12'>12</a>
-<a name='L13'></a><a href='#L13'>13</a>
-<a name='L14'></a><a href='#L14'>14</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
+<a name='L13'></a><a href='#L13'>13</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export async function getWeather(cityName) {
-    const API_KEY = 'e84f6a9560daa714e87d76927d78d870'
-    try {
-      const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?units=metric&amp;q=${cityName}&amp;appid=${API_KEY}`
-      );
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export function showMap(x, y) {
+  const mapEl = document.getElementById("weathermap");
+  mapEl.innerHTML = '&lt;div id="map" class="map"&gt;&lt;/div&gt;';
 &nbsp;
-      return await response.json();
-    }
+  let map = new L.Map('map');
 &nbsp;
-    catch (e) {
-      return null;
-    }
+  map.setView([x, y], 13);
+&nbsp;
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&amp;copy; &lt;a href="http://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;'
+  }).addTo(map);
 }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
