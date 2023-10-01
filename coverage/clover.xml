@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1696189397976" clover="3.2.0">
-  <project timestamp="1696189397976" name="All files">
-    <metrics statements="73" coveredstatements="60" conditionals="18" coveredconditionals="12" methods="11" coveredmethods="11" elements="102" coveredelements="83" complexity="0" loc="73" ncloc="73" packages="1" files="10" classes="10"/>
+<coverage generated="1696190270351" clover="3.2.0">
+  <project timestamp="1696190270351" name="All files">
+    <metrics statements="79" coveredstatements="66" conditionals="22" coveredconditionals="14" methods="11" coveredmethods="11" elements="112" coveredelements="91" complexity="0" loc="79" ncloc="79" packages="1" files="10" classes="10"/>
     <file name="addHistoryListItem.js" path="C:\Users\igor\Desktop\OTUS\FullStackDeveloper\WorkDir\JavaScript-Basic\otus-js-basic-weather\public\src\js\modules\addHistoryListItem.js">
-      <metrics statements="7" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <metrics statements="13" coveredstatements="12" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <line num="2" count="7" type="stmt"/>
       <line num="4" count="7" type="stmt"/>
       <line num="6" count="7" type="stmt"/>
-      <line num="8" count="7" type="stmt"/>
-      <line num="10" count="7" type="cond" truecount="1" falsecount="1"/>
-      <line num="11" count="0" type="stmt"/>
+      <line num="7" count="7" type="stmt"/>
+      <line num="9" count="7" type="stmt"/>
+      <line num="10" count="3" type="cond" truecount="1" falsecount="1"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="15" count="7" type="cond" truecount="1" falsecount="1"/>
       <line num="16" count="7" type="stmt"/>
+      <line num="18" count="7" type="stmt"/>
+      <line num="20" count="7" type="cond" truecount="1" falsecount="1"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="26" count="7" type="stmt"/>
     </file>
     <file name="clickHistoryLink.js" path="C:\Users\igor\Desktop\OTUS\FullStackDeveloper\WorkDir\JavaScript-Basic\otus-js-basic-weather\public\src\js\modules\clickHistoryLink.js">
       <metrics statements="6" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>

@@ -4,7 +4,7 @@ export function showMap(x, y) {
 
   let map = new L.Map('map');
 
-  map.setView([x, y], 13);
+  map.setView([x, y], 12);
 
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
