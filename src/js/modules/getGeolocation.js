@@ -1,6 +1,6 @@
 export async function getGeolocation() {
   try {
-    const endpoint = `http://ip-api.com/json/?fields=61439`;
+    const endpoint = `https://ipgeolocation.abstractapi.com/v1/?api_key=3518e727ecb44d7086d98ae9139f35d4`;
 
     const response = await fetch(endpoint);
 
