@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1696284274083" clover="3.2.0">
-  <project timestamp="1696284274083" name="All files">
+<coverage generated="1696284633993" clover="3.2.0">
+  <project timestamp="1696284633994" name="All files">
     <metrics statements="78" coveredstatements="65" conditionals="22" coveredconditionals="14" methods="11" coveredmethods="11" elements="111" coveredelements="90" complexity="0" loc="78" ncloc="78" packages="1" files="10" classes="10"/>
     <file name="addHistoryListItem.js" path="C:\Users\igor\Desktop\OTUS\FullStackDeveloper\WorkDir\JavaScript-Basic\otus-js-basic-weather\src\js\modules\addHistoryListItem.js">
       <metrics statements="13" coveredstatements="12" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>

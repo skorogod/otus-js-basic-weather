@@ -8,9 +8,9 @@
     "lint": "prettier --check . && eslint .",
     "lint-fix": "prettier --write . && eslint . --fix",
     "start-dev": "webpack serve -c webpack.config.js",
-    "start-prod": "webpack serve -c webpack.config.prod.json",
+    "start-prod": "webpack serve -c webpack.config.js",
     "build-dev": "webpack -c webpack.config.js",
-    "build-prod": "webpack -c webpack.config.prod.js"
+    "build-prod": "webpack -c webpack.config.js"
   },
   "repository": {
     "type": "module",
